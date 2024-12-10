@@ -1,0 +1,160 @@
+/* DESKTOP NAV */
+
+.logo-image{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 10px;
+    margin-bottom: 1%;
+    padding-top: 3%;
+    margin-top: 2%;
+    height: auto;  
+    padding-top: 5%;
+    max-width: 600px;
+    object-fit: scale-down;
+  }
+  .Logo_text_1{
+    margin-left: 0%;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    opacity: 30%;
+  
+  }
+  
+  .Logo_text_2{
+    font-size: xx-large;
+    margin-right: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    opacity: 30%;   
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    margin-right: 20%;
+    
+  }
+   .nav {
+    align-items: right;
+    height: 17vh;
+    white-space: nowrap;
+  } 
+  
+  
+  .nav-links {
+    color: white;
+    font-size: large;
+    padding: 10px 10px;
+    align-self: center;
+  }
+  
+  .nav-links ul{
+    margin-left: 0%;
+    padding-left: 0%;
+  }
+  
+  .nav-links:hover {
+    color:#8EB4E5;
+  }
+  .nav-links li a{
+    flex-direction: row;
+    margin-left: 0%;
+    padding-left: 0%;
+  }
+  .desktop-nav {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  #desktop-nav .nav-links li:hover a {
+    background-color: white;
+    color:#8EB4E5;
+  }
+  
+  .a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+  }
+  
+  .a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: right; /* Align items vertically centered */
+  }
+  
+  
+  /* HAMBURGER-MENU */
+  
+  .nav-links {
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    gap: 60px;
+    font-size: xx-large;
+    padding-right: 10%;
+  }
+  
+  .nav-links li {
+    margin: 0;
+    font-size: smaller;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    padding-right: 10%;
+  
+  }
+  
+  #desktop-nav, #hamburger-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .hamburger-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+  }
+  
+  .hamburger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 2px 0;
+  }
+  
+  .menu-links {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .menu-links.open {
+    display: block;
+  }
+  
+  .sectionText{
+    margin-bottom: 20%;
+  
+  
+  }
+  
+  .h1{
+    margin-bottom: 20%;
+  }

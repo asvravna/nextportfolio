@@ -4,7 +4,8 @@
 import React from 'react';
 import Image from 'next/image';
 import InteractiveImage from './InteractiveImage'; // Import the Client Component
-import styles from '../globals.css'; // Import the CSS module
+// import styles from '../globals.css'; // Import the CSS module
+import styles from '../styles/about.module.css';
 
 function About() {
   const handleIconClick = (url) => {

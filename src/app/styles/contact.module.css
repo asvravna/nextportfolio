@@ -1,0 +1,71 @@
+
+/*CONTACT*/
+
+#contact {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    padding-top: 20%;
+    margin-bottom: 20%;
+  
+  }
+  
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background:(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  
+  }
+  
+  .contact-info-container {
+    font-size: larger;
+  }
+  
+  .contact-icon {
+    cursor: default;
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+  }
+  
+  /*FOOTER*/
+   .footer-section {
+    margin-top: 20%;
+    padding-top: 0%;
+    height: 26vh;
+    margin: 0 1rem;
+  } 
+  
+  
+  .footer p {
+    text-align: center;
+    padding-right: 5%;
+  
+  }
+  
+  .nav-links-container {  
+    margin-top: 30%;
+    padding-top: 30%;
+    padding-left: 30%;
+  }
+  
+  .nav-links-container li:hover a {
+    background-color: white;
+    color: #8EB4E5;
+  }
