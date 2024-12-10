@@ -128,7 +128,7 @@ const Projects = () => {
           <div className="details-container color-container2">
             <h2 className="experience-sub-title project-title">This website</h2>
             <p className="projects__description">
-              Developed using React.
+              Developed using Next.js.
             </p>
             <button
                 className="annasbtn"
