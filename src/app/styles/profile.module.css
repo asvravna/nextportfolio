@@ -24,7 +24,7 @@
   
   .profileTitle {
     color: black;
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding-bottom: 6%;
   }
   
@@ -38,7 +38,7 @@
   .profilePic {
     border-radius: 8rem;
     object-fit: cover; /* Fit the image within its container */
-    max-width: 100%;
+    max-width: auto;
     height: auto;
   }
   
@@ -117,7 +117,7 @@
     }
   
     .sectionPicContainer {
-      height: 200px; /* Adjusted height for smaller screens */
+      height: 100px; /* Adjusted height for smaller screens */
       width: 200px; /* Adjusted width for smaller screens */
     }
   

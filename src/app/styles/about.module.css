@@ -4,6 +4,7 @@
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
+    position: relative;
   }
   
   /* Text Container */
@@ -13,13 +14,14 @@
   }
   
   .section__text__p1 {
-    font-size: 1.125rem;
+    font-size: 1.5rem; /* Increased font size for introductory text */
     margin-bottom: 10px;
   }
   
   .title {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Increased font size for the main title */
     margin-bottom: 20px;
+    color: #8EB4E5;
   }
   
   .sectionContainer {
@@ -39,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2.5rem;
     margin-bottom: 20px;
   }
   
@@ -50,6 +52,25 @@
     text-align: center;
     cursor: pointer;
     max-width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fdfdfd;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .detailsContainer:hover {
+    transform: scale(1.05);
+  }
+  
+  .detailsContainer h3 {
+    font-size: 1.75rem; /* Increased font size for the details heading */
+    margin-top: 10px;
+  }
+  
+  .detailsContainer p {
+    font-size: 1.25rem; /* Increased font size for the details paragraph */
   }
   
   .icon {
@@ -68,7 +89,14 @@
   /* Text Container */
   .textContainer {
     text-align: justify;
-    padding: 0 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    background-color: #ffffff;
+    margin-top: 20px;
+    max-width: 800px;
+    font-size: 1.5rem; /* Increased font size for the text container */
   }
   
   /* Responsive Design */
@@ -78,11 +106,11 @@
     }
   
     .title {
-      font-size: 2rem;
+      font-size: 2.5rem; /* Adjusted font size for the main title on smaller screens */
     }
   
     .section__text__p1 {
-      font-size: 1rem;
+      font-size: 1.25rem; /* Adjusted font size for introductory text on smaller screens */
     }
   
     .sectionContainer,
@@ -98,6 +126,14 @@
     .detailsContainer,
     .textContainer {
       max-width: 100%;
+    }
+  
+    .detailsContainer h3 {
+      font-size: 1rem; /* Adjusted font size for the details heading on smaller screens */
+    }
+  
+    .detailsContainer p {
+      font-size: 1rem; /* Adjusted font size for the details paragraph on smaller screens */
     }
   
     .icon {
