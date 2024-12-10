@@ -1,5 +1,4 @@
 // src/components/InteractiveImage.js
-"use client"; // This is important
 'use client';
 
 import React from 'react';

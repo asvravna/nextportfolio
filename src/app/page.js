@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import Header from './components/Header';
 import About from './components/About';
 import Profile from './components/Profile';
-// import Projects from './components/Projects';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 
 
@@ -13,11 +13,10 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <Header />
-        <h1>Under construction ... </h1>
-        {/* <Profile />
-        <About /> */}
-        {/* <Footer /> */}
-
+        <Profile />
+        <About /> 
+        <Projects />
+        <Footer />
       </main>
       <footer className={styles.footer}>
       </footer>

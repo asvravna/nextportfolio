@@ -1,8 +1,9 @@
+'use client';
+
 import React from 'react';
-import arrow from '../assets/arrow.png';
-import projectthree from '../assets/ferdig-prototype.png';
-import projecttwo from '../assets/project-2.jpg';
-import projectone from '../assets/project-1.png';
+import Image from 'next/image';
+
+
 
 
 const Projects = () => {
@@ -22,9 +23,10 @@ const Projects = () => {
             <div className="details-container color-container">
               <div className="article-container">
               <h3 className="project-title-number">Project 3</h3>
-                <img
-                  src={projectthree}
-                  alt="project 2"
+                <Image
+                  src="/images/ferdig-prototype.png"
+                  width={300}
+                  height={300}
                   className="project-img"
                 />
               </div>
@@ -50,9 +52,10 @@ const Projects = () => {
             <div className="details-container color-container">
               <div className="article-container">
               <h3 className="project-title-number">Project 2</h3>
-
-                <img
-                  src={projecttwo}
+                <Image
+                  src='/images/project-2.jpg'
+                  width={300}
+                  height={300}
                   alt="project 2"
                   className="project-img"
                 />
@@ -80,8 +83,10 @@ const Projects = () => {
               <div className="article-container">
               <h3 className="project-title-number">Project 1</h3>
 
-                <img
-                  src={projectone}
+                <Image
+                  src='/images/project-1.png'
+                  width={300}
+                  height={300}
                   alt="project 3"
                   className="project-img"
                 />
@@ -107,9 +112,11 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <img
-          src={arrow}
+        <Image
+          src='/images/arrow.png'
           alt="Arrow icon"
+          width={50}
+          height={400}
           className="icon arrow"
           onClick={() => (window.location.href = './#this-website')}
         />
@@ -132,9 +139,14 @@ const Projects = () => {
         </div>
       </section>
     </div>
-      <img src={arrow} alt="Arrow icon" className="icon arrow"
-      onClick={() => (window.location.href = './#contact')}
-      />
+    <Image
+          src='/images/arrow.png'
+          alt="Arrow icon"
+          width={50}
+          height={50}
+          className="icon arrow"
+          onClick={() => (window.location.href = './#contacts')}
+        />
     </div>
   );
 };

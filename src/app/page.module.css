@@ -37,12 +37,11 @@
   margin-right: 20%;
   
 }
-/* 
-nav {
+ .nav {
   align-items: right;
   height: 17vh;
   white-space: nowrap;
-} */
+} 
 
 
 .nav-links {
@@ -75,20 +74,17 @@ nav {
   color:#8EB4E5;
 }
 
-/* a {
+.a {
 color: black;
 text-decoration: none;
 text-decoration-color: white;
 }
 
-a:hover {
+.a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
 }
- */
-
-
 
 .logo-container {
   display: flex;
