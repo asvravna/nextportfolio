@@ -2,8 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import styles from '../page.module.css'; // Import CSS module
-// portfolio\src\app\page.module.css
+import styles from '../page.module.css'; 
 
 function Profile() {
     const openInNewTab = (url) => {
