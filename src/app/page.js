@@ -16,7 +16,7 @@ export default function Home() {
         <h1>Under construction ... </h1>
         {/* <Profile />
         <About /> */}
-        <Footer />
+        {/* <Footer /> */}
 
       </main>
       <footer className={styles.footer}>
