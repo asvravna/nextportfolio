@@ -3,7 +3,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Profile from './components/Profile';
 // import Projects from './components/Projects';
-// import Experience from './components/Experience';
+import Footer from './components/Footer';
 
 
 
@@ -15,12 +15,10 @@ export default function Home() {
         <Header />
         <Profile />
         <About />
+        <Footer />
 
       </main>
       <footer className={styles.footer}>
-    
-     
-    
       </footer>
     </div>
   );
