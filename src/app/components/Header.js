@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import styles from '../page.module.css'; 
 
 
 function Header() {
@@ -8,14 +9,13 @@ function Header() {
       <header className="App-header">
         <nav id="desktop-nav">
           <p className="Logo_text_1"> A. S.</p>
-          <Image 
-            src="/images/logo3.webp"
-            alt="logo"
-            // className={logo}
-            width={1000} 
-            height={1000} 
-            layout="responsive"
-          />
+          <Image
+          src="/images/logo3.webp" // Update with your logo image path
+          alt="Logo"
+          width={700} // Set desired width
+          height={100} // Set desired height
+          className={styles.logoimg} // Apply custom styles
+        />
           <p className="Logo_text_2"> Ravna </p>
           <div className="navbar-elements">
             <ul className="nav-links">
