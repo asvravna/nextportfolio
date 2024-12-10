@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+
 
 function Header() {
   return (
@@ -6,7 +8,14 @@ function Header() {
       <header className="App-header">
         <nav id="desktop-nav">
           <p className="Logo_text_1"> A. S.</p>
-          <img src="/images/logo3.webp" alt="Anna Vylka Ravna Logo" className="logo-image" />
+          <Image 
+            src="/images/logo3.webp"
+            alt="logo"
+            // className={logo}
+            width={1000} 
+            height={1000} 
+            layout="responsive"
+          />
           <p className="Logo_text_2"> Ravna </p>
           <div className="navbar-elements">
             <ul className="nav-links">
