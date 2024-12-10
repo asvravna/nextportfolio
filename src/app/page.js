@@ -13,8 +13,9 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <Header />
-        <Profile />
-        <About />
+        <h1>Under construction ... </h1>
+        {/* <Profile />
+        <About /> */}
         <Footer />
 
       </main>
