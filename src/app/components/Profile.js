@@ -1,53 +1,66 @@
+'use client';
+
 import React from 'react';
-import profileImg from '../assets/about-pic.jpg'
-import linkedin from '../assets/linkedin.png'
-import github from '../assets/github.png'
+import Image from 'next/image';
+import styles from '../page.module.css'; // Import CSS module
+// portfolio\src\app\page.module.css
 
+function Profile() {
+    const openInNewTab = (url) => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
 
-function About(){
-  const openInNewTab = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
     return (
-        <>
-        <div className="profile-section"> 
-            <section id= "profile"> 
-                <div className="section_pic-container">
-                    <img src={profileImg}
-                        alt="Anna Ravna profile picture "
-                        className="about-pic"
-                        />
+        <div className={styles.profileSection}> 
+            <section id="profile"> 
+                <div className={styles.sectionPicContainer}>
+                    <Image 
+                        src="/images/about-pic.jpg"
+                        alt="Anna Ravna profile picture"
+                        className={styles.aboutPic}
+                        width={150} // Set appropriate width
+                        height={150} // Set appropriate height
+                        layout="responsive" // Optional: Use if you need it to be responsive
+                    />
                 </div>
-                    <div className="section__text">
-                        <p className= "section__text__p1"> Hello I'm </p>
-                        <h1 className="profile-title">Anna Sofie Vylka Ravna</h1>
-                        <p className="section__text__p2">Developer & UX-designer</p>
-                    <div className="btn-container">
-                    <button className="btn btn-color-2"
-                        onClick={() => openInNewTab('../CV_english2.pdf')}
-                    >
-                    Download CV
-                    </button>
-                    <button className="btn btn-color-2"
-                        onClick={() => (window.location.href = './#contact')}
-                    >
-                    Contact info
-                    </button>
-                </div>
-                    <div id ="socials-container">
-                        <img src={linkedin} alt="My LinkedIn profile"
-                        className="icon"  onClick={() => openInNewTab('https://www.linkedin.com/in/anna-sofie-vylka-ravna-2849ba284/')}
+                <div className={styles.sectionText}>
+                    <p className={styles.sectionTextP1}>Hello I'm</p>
+                    <h1 className={styles.profileTitle}>Anna Sofie Vylka Ravna</h1>
+                    <p className={styles.sectionTextP2}>Developer & UX-designer</p>
+                    <div className={styles.btnContainer}>
+                        <button className={styles.btn + ' ' + styles.btnColor2}
+                            onClick={() => openInNewTab('/images/CV_english2.pdf')}
+                        >
+                            Download CV
+                        </button>
+                        <button className={styles.btn + ' ' + styles.btnColor2}
+                            onClick={() => (window.location.href = './#contact')}
+                        >
+                            Contact info
+                        </button>
+                    </div>
+                    <div id={styles.socialsContainer}>
+                        <Image
+                            src="/images/linkedin.png"
+                            alt="My LinkedIn profile"
+                            className={styles.icon}
+                            width={32} // Set appropriate width
+                            height={32} // Set appropriate height
+                            onClick={() => openInNewTab('https://www.linkedin.com/in/anna-sofie-vylka-ravna-2849ba284/')}
                         />
-                        <img src={github} alt="My GitHub profile"
-                        className="icon" onClick={() => openInNewTab('https://github.com/asvravna')}
+                        <Image
+                            src="/images/github.png"
+                            alt="My GitHub profile"
+                            className={styles.icon}
+                            width={32} // Set appropriate width
+                            height={32} // Set appropriate height
+                            onClick={() => openInNewTab('https://github.com/asvravna')}
                         />
                     </div>
                 </div>
             </section>
         </div>
-    </>
-    )
+    );
 }
 
-export default About;
-
+export default Profile;
