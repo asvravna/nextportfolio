@@ -1,172 +1,145 @@
-/*SECTIONS*/
+/*CSS for larger image*/
 
-.section {
-    padding-top:4vh;
-    height:96vh;
+/*SECTIONS*/
+.profileSection {
+    padding-top: 4vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-  } 
+    background-color: white;
+  }
   
-  .section-container {
+  .sectionContainer {
     display: flex;
   }
   
-  
-
-/*PROFILE SECTION*/
-#profile {
+  /*PROFILE SECTION*/
+  #profile {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    min-height: 80vh;
   }
-  .profile-title {
+  
+  .profileTitle {
     color: black;
-    font-size: 250%;
+    font-size: 2.5rem;
     padding-bottom: 6%;
-  
   }
   
-  .section__pic-container {
+  .sectionPicContainer {
     display: flex;
-    height: 40px;
-    width: 40px;
+    height: 500px; /* Increased height for the image container */
+    width: 1000px; /* Increased width for the image container */
     margin: auto 0;
-  
-  }
-  .profile-pic {
-    border-radius: 2rem;
-    height: 300;
-    width: 200;
-    
   }
   
-  .section__text {
+  .profilePic {
+    border-radius: 8rem;
+    object-fit: cover; /* Fit the image within its container */
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Text Styles */
+  .sectionText {
     align-self: center;
     text-align: center;
-  
   }
   
-  .section__text p {
-    font-weight: 600;
-  
-  }
-  
-  .section__text__p1 {
-    padding-top: 200px;
-    text-align: center;
+  .sectionTextP1 {
     font-size: large;
     padding-bottom: 2%;
-  
   }
   
-  .section__text__p2 {
+  .sectionTextP2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-    color:#8EB4E5;
-  
+    color: #8EB4E5;
   }
   
   .title {
     font-size: 3rem;
-    text-align:center;
+    text-align: center;
   }
   
-  #socials-container {
+  .socialsContainer {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap:1rem;
-    
-  }
-  .section {
-    background-color: lightblue;
-  }
-  .btn btn-color-2{
-    margin-top: 10%;
+    gap: 1rem;
   }
   
-  /*ICONS*/
-  
-  .icon{
-    cursor:pointer;
-    height:2rem;
-  }
-  
-  /*BUTTONS*/
-  .btn-container {
+  /* Buttons */
+  .btnContainer {
     display: flex;
     justify-content: center;
     gap: 1rem;
-  
+    margin-top: 1rem;
   }
   
   .btn {
     font-weight: 600;
-    transition: all 300ms ease ;
+    transition: all 300ms ease;
     padding: 1rem;
-    width:8rem;
+    width: 8rem;
     border-radius: 2rem;
-  
-  }
-  .annasbtn{
-    border: rbg(53, 53, 53) 0.1rem solid;
-    border: rgb(255, 255, 255) 0.1 rem solid;
-    padding: 10px;
-    z-index: 1000; /* Ensure it's on top */
-    position: relative; /* Ensure it can overlap correctly */
-    font-weight: 600;
-    transition: all 300ms ease ;
-    padding: 1rem;
-    width:8rem;
-    border-radius: 2rem;
-    background-color:white; 
+    cursor: pointer;
   }
   
-    
-  .btn btn-color-2 project btn:hover{
-    cursor:pointer;
-  
-  
+  .btnColor2 {
+    background-color: white;
+    border: 0.1rem solid rgb(53, 53, 53);
   }
   
-  .btn-color-1, .btn-color-2 {
-    border: rbg(53, 53, 53) 0.1rem solid;
-  }
-  
-  .btn-color-1:hover,
-  .btn-color-2:hover {
-    cursor:pointer;
-  }
-  
-  .btn-color-1,
-  .annasbtn:hover,
-  .btn-color-2:hover {
+  .btnColor2:hover {
     background: rgb(53, 53, 53);
-    color:white; 
+    color: white;
   }
   
-  .btn-color-1:hover {
-    background: rgb(53, 53, 53);
-  
+  /* Icons */
+  .icon {
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
   }
   
-  .btn-color-2 {
-    background: none;
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profileSection {
+      margin: 0 2rem;
+    }
   
+    #profile {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .sectionPicContainer {
+      height: 200px; /* Adjusted height for smaller screens */
+      width: 200px; /* Adjusted width for smaller screens */
+    }
+  
+    .profileTitle {
+      font-size: 2rem; 
+    }
+  
+    .sectionTextP1 {
+      font-size: medium;
+    }
+  
+    .sectionTextP2 {
+      font-size: 1.5rem;
+    }
+  
+    .btn {
+      width: 70%; /* Responsive width */
+    }
+  
+    .icon {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
   }
-  
-  .btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1 rem solid;
-    
-  }
-  
-  .btn-container {
-    gap: 1rem;
-  }
-  
-  
-  
-  
   

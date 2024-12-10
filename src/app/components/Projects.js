@@ -113,14 +113,6 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <Image
-          src='/images/arrow.png'
-          alt="Arrow icon"
-          width={50}
-          height={400}
-          className="icon arrow"
-          onClick={() => (window.location.href = './#this-website')}
-        />
       </section>
       <div className="container">
       <section id="this-website">
@@ -140,14 +132,6 @@ const Projects = () => {
         </div>
       </section>
     </div>
-    <Image
-          src='/images/arrow.png'
-          alt="Arrow icon"
-          width={50}
-          height={50}
-          className="icon arrow"
-          onClick={() => (window.location.href = './#contacts')}
-        />
     </div>
   );
 };
