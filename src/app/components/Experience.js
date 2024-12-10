@@ -214,14 +214,14 @@ function Experience() {
                         <h1 className="year-description start">2024</h1>
                         <h1 className="year-description end">2025</h1>
                     </div>
-                    <Image
+                    {/* <Image
                         src="/images/arrow.png"
                         alt="Arrow icon"
                         height={100}
                         width={30}
                         className="icon arrow"
                         onClick={() => (window.location.href = './#projects')}
-                    />
+                    /> */}
                 </section>
             </div>
         </>

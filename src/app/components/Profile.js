@@ -18,7 +18,7 @@ function Profile() {
                         alt="Anna Ravna profile picture"
                         className={styles.aboutPic}
                         width={1000} 
-                        height={1000}
+                        height={900}
                         layout="responsive" 
                     />
                 </div>
