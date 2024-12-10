@@ -31,7 +31,7 @@ function Experience() {
                                     <Image
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />
@@ -44,7 +44,7 @@ function Experience() {
                                     <Image
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />
@@ -57,7 +57,7 @@ function Experience() {
                                     <Image
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />
@@ -70,7 +70,7 @@ function Experience() {
                                     <Image 
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />
@@ -88,7 +88,7 @@ function Experience() {
                                     <Image 
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />
@@ -101,7 +101,7 @@ function Experience() {
                                         <Image
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />
@@ -114,7 +114,7 @@ function Experience() {
                                         <Image
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />
@@ -127,7 +127,7 @@ function Experience() {
                                         <Image
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />
@@ -140,7 +140,7 @@ function Experience() {
                                         <Image
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />
@@ -153,7 +153,7 @@ function Experience() {
                                         <Image
                                         src="/images/checkmark.png"
                                         height={100}
-                                        width={40}
+                                        width={35}
                                         alt="Experience icon"
                                         className="icon"
                                         />

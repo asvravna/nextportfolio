@@ -17,9 +17,9 @@ function Profile() {
                         src="/images/about-pic.jpg"
                         alt="Anna Ravna profile picture"
                         className={styles.aboutPic}
-                        width={150} // Set appropriate width
-                        height={150} // Set appropriate height
-                        layout="responsive" // Optional: Use if you need it to be responsive
+                        width={150} 
+                        height={150}
+                        layout="responsive" 
                     />
                 </div>
                 <div className={styles.sectionText}>

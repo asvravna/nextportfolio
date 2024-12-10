@@ -151,16 +151,26 @@ text-decoration-color: white;
   display: block;
 }
 
+.sectionText{
+  margin-bottom: 20%;
+
+
+}
+
+.h1{
+  margin-bottom: 20%;
+}
+
 
 /*SECTIONS*/
 
-/* section {
+ .section {
   padding-top:4vh;
   height:96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-} */
+} 
 
 .section-container {
   display: flex;
