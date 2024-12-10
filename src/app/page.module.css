@@ -649,6 +649,9 @@ article .icon {
 .experience-details-container{
   padding-bottom: 10%;
 }
+.container{
+  margin-bottom: 30%;
+}
 
 .this-website{
   padding-top: 63%;
@@ -712,23 +715,26 @@ article .icon {
 }
 
 /*FOOTER*/
-/* footer {
+ .footer-section {
+  margin-top: 20%;
   padding-top: 0%;
   height: 26vh;
   margin: 0 1rem;
+} 
 
-} */
-/* 
-footer p {
+
+.footer p {
   text-align: center;
   padding-right: 5%;
 
-} */
+}
 
-.nav-links-container {
+.nav-links-container {  
+  margin-top: 30%;
+  padding-top: 30%;
   padding-left: 30%;
 }
-/* Change the background color and text color of the links on hover */
+
 .nav-links-container li:hover a {
   background-color: white;
   color: #8EB4E5;

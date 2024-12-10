@@ -27,6 +27,7 @@ const Projects = () => {
                   src="/images/ferdig-prototype.png"
                   width={300}
                   height={300}
+                  alt="project-1"
                   className="project-img"
                 />
               </div>
