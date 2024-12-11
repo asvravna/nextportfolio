@@ -74,7 +74,7 @@ const Projects = () => {
                 </button>
                 <button
                   className="btn btn-color-2 project-btn"
-                  onClick={() => openInNewTab('./assets/Diplom Anna Ravna.pdf')}
+                  onClick={() => openInNewTab('./images/Diplom Anna Ravna.pdf')}
                 >
                   Diploma
                 </button>

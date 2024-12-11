@@ -28,7 +28,7 @@ function Profile() {
                     <p className={styles.sectionTextP2}>Developer &amp; UX-designer</p>
                     <div className={styles.btnContainer}>
                         <button className={styles.btn + ' ' + styles.btnColor2}
-                            onClick={() => openInNewTab('/images/CV_english2.pdf')}
+                            onClick={() => openInNewTab('./images/CV.pdf')}
                         >
                             Download CV
                         </button>
@@ -43,8 +43,8 @@ function Profile() {
                             src="/images/linkedin.png"
                             alt="My LinkedIn profile"
                             className={styles.icon}
-                            width={32} // Set appropriate width
-                            height={32} // Set appropriate height
+                            width={32} 
+                            height={32} 
                             onClick={() => openInNewTab('https://www.linkedin.com/in/anna-sofie-vylka-ravna-2849ba284/')}
                         />
                         <Image
