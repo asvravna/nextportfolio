@@ -35,7 +35,7 @@ function About() {
                 <Image
                   src="/images/education.png"
                   alt="Education icon"
-                  class={styles.icon}
+                  className={styles.icon}
                   width={64}
                   height={64}
                 />
@@ -49,7 +49,7 @@ function About() {
           </div>
           <div className={styles.textContainer}>
             <p>
-              I am a 21-year-old student from Tromsø, studying informatics at the University of Oslo.
+              I am a 22-year-old student from Tromsø, studying informatics at the University of Oslo.
               I am currently studying research methods in Human-Computer-Interaction, as well as how
               public services and legal systems can be automated to be more efficient. I have a great
               interest in software development, and I like working with both backend and frontend

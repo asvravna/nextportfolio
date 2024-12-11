@@ -124,8 +124,8 @@
     }
   
     .sectionPicContainer {
-      height: 100px; /* Adjusted height for smaller screens */
-      width: 200px; /* Adjusted width for smaller screens */
+      height: 100px; 
+      width: 200px; 
     }
   
     .profileTitle {
@@ -141,7 +141,7 @@
     }
   
     .btn {
-      width: 70%; /* Responsive width */
+      width: 70%; 
     }
   
     .icon {

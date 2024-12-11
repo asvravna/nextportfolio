@@ -1,8 +1,10 @@
-/*EXPERIENCE*/
+/* EXPERIENCE SECTION */
 #experience {
     position: relative;
+    padding: 1rem;
   }
   
+  /* SUBTITLE */
   .experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
@@ -10,15 +12,16 @@
     margin-bottom: 2rem;
   }
   
+  /* DETAILS CONTAINER */
   .experience-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-top: 2%;
     padding-right: 10%;
-  
   }
   
+  /* ARTICLE CONTAINER */
   .article-container {
     display: flex;
     text-align: initial;
@@ -26,17 +29,17 @@
     flex-direction: row;
     gap: 2.5rem;
     justify-content: space-around;
-  
   }
   
+  /* TIMELINE CONTAINER */
   .timeline-container {
     width: 100%;
     position: relative;
     padding-top: 5px;
     margin: 0 auto;
-  
   }
   
+  /* TIMELINE LINE */
   .timeline-line {
     margin-top: 1%;
     width: 101%;
@@ -46,13 +49,15 @@
     top: 50%;
     left: 0;
   }
+  
+  /* YEAR DESCRIPTION */
   .year-description {
     font-size: smaller;
     gap: 10%;
     padding-top: 2%;
-  
   }
   
+  /* TIMELINE POINTS */
   .timeline-points {
     display: flex;
     justify-content: space-between;
@@ -60,6 +65,7 @@
     margin-top: 2%;
   }
   
+  /* TIMELINE POINT */
   .timeline-point {
     position: relative;
     width: 20px;
@@ -68,24 +74,25 @@
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
-    top: -10px; /* Adjust this value to align the points vertically with the line */
+    top: -10px; 
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
   }
   
+  /* TIMELINE ARROW */
   .timeline-arrow {
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid black; /* Color of the arrow */
+    border-left: 10px solid black;
     position: absolute;
-    right: -15px; /* Adjust this value to position the arrow */
+    right: -15px; 
     margin-top: 1%;
-  
   }
   
+  /* TOOLTIP */
   .tooltip {
     display: none;
     position: absolute;
@@ -98,19 +105,19 @@
     border-radius: 5px;
     font-size: 20px;
     padding-top: 2%;
-  
   }
   
+  /* TOOLTIP DISPLAY */
   .timeline-point:hover .tooltip {
     display: block;
   }
   
-  .timeline-points {
-    position: relative;
-    width: 100%;
+  /* TIMELINE POINT ACTIVE */
+  .timeline-point.active .detail {
+    display: block;
   }
   
-  
+  /* DETAIL */
   .detail {
     font-size: large;
     display: none;
@@ -126,10 +133,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   }
   
+  /* DETAIL ACTIVE */
   .detail.active {
     display: block;
   }
   
+  /* CLOSE BUTTON */
   .close-btn {
     position: absolute;
     top: 10px;
@@ -143,7 +152,7 @@
     font-size: 9px;
   }
   
-  
+  /* TIMELINE LABELS */
   .timeline-labels {
     display: flex;
     justify-content: space-between;
@@ -151,24 +160,85 @@
     margin-top: 10px; 
   }
   
+  /* YEAR DESCRIPTION STYLES */
   .year-description {
     margin: 0;
     color: #555;
     font-size: 16px;
   }
   
-  .timeline-point.active .detail {
-    display: block;
-  }
-  
+  /* ARTICLE */
   .article {
     display: flex;
     width: 10rem;
-    justify-content:space-around;
+    justify-content: space-around;
     gap: 0.5rem;
   }
   
+  /* ARTICLE ICON */
   article .icon {
     cursor: default;
+  }
+  
+  /* RESPONSIVE DESIGN USING MEDIA QUERIES */
+  @media (max-width: 768px) {
+    #experience {
+      padding: 1rem;
+    }
+  
+    .experience-sub-title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .experience-details-container {
+      padding: 1rem;
+      padding-right: 0;
+    }
+  
+    .article-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .timeline-line {
+      width: 100%;
+    }
+  
+    .timeline-points {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .timeline-point {
+      width: 15px;
+      height: 15px;
+    }
+  
+    .tooltip {
+      font-size: 16px;
+    }
+  
+    .detail {
+      max-width: 90%;
+      width: auto;
+      top: -80px;
+    }
+  
+    .close-btn {
+      top: 5px;
+      right: 5px;
+      font-size: 8px;
+    }
+  
+    .timeline-labels {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .year-description {
+      font-size: 14px;
+      text-align: center;
+    }
   }
   

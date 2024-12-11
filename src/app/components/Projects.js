@@ -124,7 +124,7 @@ const Projects = () => {
             </p>
             <button
                 className="annasbtn"
-                onClick={() => openInNewTab('https://github.com/asvravna/portfolio')}
+                onClick={() => openInNewTab('https://github.com/asvravna/nextportfolio')}
                 >
                 Source code
             </button>
