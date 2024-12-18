@@ -38,7 +38,6 @@ a:hover {
 }
 
 /* Navigation */
-@media screen and (min-width: 769px) {
 nav, .nav-links {
   display: flex;
   justify-content: space-between;
@@ -81,7 +80,7 @@ nav {
 }
 
 .Logo_text{
-  font-size: 3rem;
+  font-size: rem;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   opacity: 30%;
@@ -124,6 +123,37 @@ nav {
   height: 4px;
   background-color: black;
   border-radius: 5px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Hide navigation links by default */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent background */
+    width: 50%;  /* Make the menu more compact */
+    height: 100vh;  /* Full-screen height */
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 1rem;
+    z-index: 9;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;  /* Smooth transition */
+  }
+
+  /* When menu is open, display the links */
+  .nav-links.open {
+    display: flex;
+  }
+
+  /* Show hamburger icon on mobile */
+  .hamburger {
+    display: flex;
+  }
 }
 
 /* Logo Styles */
@@ -240,41 +270,6 @@ section {
   width: 120px;
   height: 120px;
 }
-
-
-
-}
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-  /* Hide navigation links by default */
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent background */
-    width: 50%;  /* Make the menu more compact */
-    height: 100vh;  /* Full-screen height */
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    padding-right: 1rem;
-    z-index: 9;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;  /* Smooth transition */
-  }
-
-  /* When menu is open, display the links */
-  .nav-links.open {
-    display: flex;
-  }
-
-  /* Show hamburger icon on mobile */
-  .hamburger {
-    display: flex;
-  }
-}
-
 
 /* About Section */
 #about {
