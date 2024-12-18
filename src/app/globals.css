@@ -162,8 +162,8 @@ nav {
   width:40%;
 }
 
-.Logo_text_1, .Logo_text_2 {
-  font-size: 1.5rem;
+.Logo_text{
+  font-size: 1.9rem;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   opacity: 20%;
