@@ -1,14 +1,14 @@
-/* Global Styles */
+/* Global Styles -------------------------------------------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensures elements respect padding and border */
+  box-sizing: border-box; 
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: white;
-  font-size: 1rem; /* Adjust font size for readability on mobile */
+  font-size: 1rem; 
   line-height: 1.5;
 }
 
@@ -37,95 +37,11 @@ a:hover {
   text-underline-offset: 1rem;
 }
 
-/* Navigation */
-nav, .nav-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
-  flex-wrap: wrap; /* Allow nav items to stack when space is tight */
-}
 
-.nav-links {
-  flex-direction: row;
-  list-style: none;
-  font-size: 1.2rem;
-  gap: 1rem;
-  width: 100%; /* Full width for mobile nav */
-}
 
-.nav-links li a {
-  text-decoration: none;
-  color: black;
-  padding: 0rem;
-  width: 100%;
-  text-align: right;
-}
 
-.nav-links:hover {
-  color: #8EB4E5;
-}
-/* General Styles for Navigation */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  position: relative;
-}
 
-.logoimg {
-  height: 50px;
-  width: auto;
-}
-
-.Logo_text{
-  font-size: rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
-  opacity: 30%;
-  text-align: center;
-}
-
-/* Navbar Links Styling */
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  list-style: none;
-  font-size: 1.2rem;
-  width: 100%;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: black;
-  padding: 1rem;
-  font-weight: 600;
-}
-
-.nav-links li a:hover {
-  color: grey;
-  text-decoration: underline;
-}
-
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 0.4rem;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.hamburger .line {
-  width: 30px;
-  height: 4px;
-  background-color: black;
-  border-radius: 5px;
-}
-
-/* Mobile Responsiveness */
+/* Mobile Responsiveness ------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   /* Hide navigation links by default */
   .nav-links {
@@ -156,6 +72,198 @@ nav {
   }
 }
 
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .aboutPic {
+    width: 100%;  /* Allow the image to fill 90% of the container on mobile */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+  }
+
+  .text-container {
+    font-size: 0.9rem; /* Slightly smaller text for better readability */
+  }
+}
+
+
+/* Mobile devices (up to 768px) - Hide the timeline */
+@media (max-width: 768px) {
+  .timeline-container {
+      display: none;
+  }
+  .year-description{
+    display: none;
+
+    
+  }
+}
+
+/* Mobile and Small Screen Styles */
+@media (max-width: 768px) {
+  .timeline-container {
+    padding: 1rem;
+  }
+
+  .timeline-line {
+    left: 10%;
+    height: 100%;
+  }
+
+  .timeline-points {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .timeline-point {
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 1.5rem 0;
+  }
+
+  .year-description {
+    font-size: 1rem;
+  }
+
+  .detail {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+  .contact-info-container {
+      gap: 0.8rem; /* Smaller gap between icons */
+  }
+
+  .contact-info-container .contact-icon {
+      width: 25px; /* Smaller icons for mobile */
+      height: 25px;
+  }
+
+  .contact-info-container p {
+      font-size: 0.9rem; /* Adjust text size for mobile */
+  }
+}
+
+
+
+/* Footer */
+/* Make nav-links invisible on mobile screen sizes */
+@media screen and (max-width: 768px) {
+  footer ul {
+      display: none;  /* Hides the unordered list on mobile */
+  }
+  footer-nav-links{
+    display: none;  /* Hides the unordered list on mobile */
+
+  }
+}
+
+/* Mobile Media Query */
+@media screen and (max-width: 768px) {
+  body {
+      font-size: 0.9rem; /* Make font smaller for better mobile readability */
+      padding: 0 1rem; /* Add padding for mobile */
+  }
+
+  .nav-links {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1rem 0;
+      width: 100%;
+  }
+
+  .logo-image {
+      width: 100px;
+      height: 100px;
+  }
+
+  .profile-title {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+  }
+
+  .profile-pic {
+      width: 120px;
+      height: 120px;
+  }
+
+  .about-pic {
+      width: 80%;
+      max-width: 400px;
+      height: auto;
+  }
+
+  .text-container {
+      font-size: 1rem;
+      line-height: 1.5;
+  }
+
+  /* Ensure images scale down and don't overwhelm the screen */
+  .project-img {
+      width: 90%;
+      max-width: 300px;
+  }
+
+  .color-container {
+    width: 100%; /* Makes the container fill the entire width */
+    max-width: 100%; /* Ensure no maximum width limit */
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 1rem; /* Add some space inside the box */
+    border-radius: 8px; /* Optional: round the corners */
+    background-color: #fff; /* Optional: background color */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin: 0 auto; /* Centering horizontally if there's any margin */
+
+}
+  /* Mobile-specific button sizes */
+  .btn {
+      width: 100%;
+      font-size: 1.1rem;
+  }
+
+  /* Centering content and reducing text size for contact info */
+  .contact-info-container {
+      font-size: 0.9rem;
+      flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop-specific adjustments ----------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 769px) {
+  .contact-info-container {
+      gap: 1.5rem; /* Larger gap between icons on desktop */
+  }
+
+  .contact-info-container .contact-icon {
+      width: 35px; /* Larger icons for desktop */
+      height: 35px;
+  }
+}
 /* Logo Styles */
 .logoimg{
   height: 40%;
@@ -230,6 +338,38 @@ nav {
   transform: scale(1.1);             /* Scale up the icons on hover */
 }
 
+.detail {
+  display: none;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.year-description {
+  position: absolute;
+  top: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.start {
+  left: 5%;
+}
+
+.end {
+  right: 5%;
+}
+
 /* Sections */
 section {
   padding-top: 4vh;
@@ -270,6 +410,97 @@ section {
   width: 120px;
   height: 120px;
 }
+
+/* Navigation */
+nav, .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  flex-wrap: wrap; 
+}
+
+.nav-links {
+  flex-direction: row;
+  list-style: none;
+  font-size: 1.2rem;
+  gap: 1rem;
+  width: 100%; 
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 0rem;
+  width: 100%;
+  text-align: right;
+}
+
+.nav-links:hover {
+  color: #8EB4E5;
+}
+/* General Styles for Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.logoimg {
+  height: 50px;
+  width: auto;
+}
+
+.Logo_text{
+  font-size: rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  opacity: 30%;
+  text-align: center;
+}
+
+/* Navbar Links Styling */
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  font-weight: 200;
+}
+
+.nav-links li a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 0.4rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+
+
 
 /* About Section */
 #about {
@@ -342,19 +573,6 @@ h1 {
   text-align: center;
   line-height: 1.4;
 }
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-  .aboutPic {
-    width: 100%;  /* Allow the image to fill 90% of the container on mobile */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
-  }
-
-  .text-container {
-    font-size: 0.9rem; /* Slightly smaller text for better readability */
-  }
-}
-
 
 /* Experience Section */
 #experience {
@@ -600,83 +818,6 @@ article .icon {
   display: block;
 }
 
-/* Mobile devices (up to 768px) - Hide the timeline */
-@media (max-width: 768px) {
-  .timeline-container {
-      display: none;
-  }
-  .year-description{
-    display: none;
-
-    
-  }
-}
-
-.detail {
-  display: none;
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-radius: 8px;
-  width: 200px;
-  margin-top: 10px;
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
-.year-description {
-  position: absolute;
-  top: 100%;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.start {
-  left: 5%;
-}
-
-.end {
-  right: 5%;
-}
-
-/* Mobile and Small Screen Styles */
-@media (max-width: 768px) {
-  .timeline-container {
-    padding: 1rem;
-  }
-
-  .timeline-line {
-    left: 10%;
-    height: 100%;
-  }
-
-  .timeline-points {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .timeline-point {
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 1.5rem 0;
-  }
-
-  .year-description {
-    font-size: 1rem;
-  }
-
-  .detail {
-    width: 100%;
-    margin-top: 1rem;
-  }
-}
-
 
 /* Projects Section */
 #projects {
@@ -746,122 +887,6 @@ article .icon {
   color: black;
   margin: 0;
 }
-
-/* Mobile-specific adjustments */
-@media screen and (max-width: 768px) {
-  .contact-info-container {
-      gap: 0.8rem; /* Smaller gap between icons */
-  }
-
-  .contact-info-container .contact-icon {
-      width: 25px; /* Smaller icons for mobile */
-      height: 25px;
-  }
-
-  .contact-info-container p {
-      font-size: 0.9rem; /* Adjust text size for mobile */
-  }
-}
-
-/* Desktop-specific adjustments */
-@media screen and (min-width: 769px) {
-  .contact-info-container {
-      gap: 1.5rem; /* Larger gap between icons on desktop */
-  }
-
-  .contact-info-container .contact-icon {
-      width: 35px; /* Larger icons for desktop */
-      height: 35px;
-  }
-}
-
-
-
-/* Footer */
-/* Make nav-links invisible on mobile screen sizes */
-@media screen and (max-width: 768px) {
-  footer ul {
-      display: none;  /* Hides the unordered list on mobile */
-  }
-  footer-nav-links{
-    display: none;  /* Hides the unordered list on mobile */
-
-  }
-}
-
-/* Mobile Media Query */
-@media screen and (max-width: 768px) {
-  body {
-      font-size: 0.9rem; /* Make font smaller for better mobile readability */
-      padding: 0 1rem; /* Add padding for mobile */
-  }
-
-  .nav-links {
-      flex-direction: column;
-      gap: 1.5rem;
-      padding: 1rem 0;
-      width: 100%;
-  }
-
-  .logo-image {
-      width: 100px;
-      height: 100px;
-  }
-
-  .profile-title {
-      font-size: 1.5rem;
-      padding-bottom: 1rem;
-  }
-
-  .profile-pic {
-      width: 120px;
-      height: 120px;
-  }
-
-  .about-pic {
-      width: 80%;
-      max-width: 400px;
-      height: auto;
-  }
-
-  .text-container {
-      font-size: 1rem;
-      line-height: 1.5;
-  }
-
-  /* Ensure images scale down and don't overwhelm the screen */
-  .project-img {
-      width: 90%;
-      max-width: 300px;
-  }
-
-  .color-container {
-    width: 100%; /* Makes the container fill the entire width */
-    max-width: 100%; /* Ensure no maximum width limit */
-    border: 2px solid #ccc; /* Light gray border */
-    padding: 1rem; /* Add some space inside the box */
-    border-radius: 8px; /* Optional: round the corners */
-    background-color: #fff; /* Optional: background color */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    margin: 0 auto; /* Centering horizontally if there's any margin */
-
-}
-  /* Mobile-specific button sizes */
-  .btn {
-      width: 100%;
-      font-size: 1.1rem;
-  }
-
-  /* Centering content and reducing text size for contact info */
-  .contact-info-container {
-      font-size: 0.9rem;
-      flex-direction: column;
-  }
-}
-
-
-
-
 
 /* DESKTOP Media Query */
 @media screen and (min-width: 769px) {
