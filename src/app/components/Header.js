@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 function Header() {
@@ -9,6 +9,25 @@ function Header() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Close the menu if the user clicks outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const navLinks = document.querySelector('.nav-links');
+      const hamburger = document.querySelector('.hamburger');
+      if (navLinks && hamburger && !navLinks.contains(event.target) && !hamburger.contains(event.target)) {
+        setIsMenuOpen(false);  // Close menu if clicking outside
+      }
+    };
+
+    // Add event listener when component mounts
+    document.addEventListener('click', handleClickOutside);
+
+    // Clean up event listener when component unmounts
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="App">
@@ -23,17 +42,16 @@ function Header() {
             className="logoimg"
             priority // Add the "priority" prop to improve LCP
           />
-
           <p className="Logo_text"> Ravna </p>
 
           {/* Hamburger Icon for Mobile */}
-          <div className="hamburger" onClick={toggleMenu}>
+          <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
           </div>
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Navigation Links
           <div className="navbar-elements">
             <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
               <li><a href="#about">About</a></li>
@@ -42,7 +60,7 @@ function Header() {
               <li><a href="#contact">Contact</a></li>
               <li><a href="#this-website">This website</a></li>
             </ul>
-          </div>
+          </div> */}
         </nav>
       </header>
     </div>
