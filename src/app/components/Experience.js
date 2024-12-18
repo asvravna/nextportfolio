@@ -4,6 +4,8 @@ import React from 'react';
 import Image from 'next/image';
 
 
+
+
 function Experience() {
     const expandDetail = (element) => {
         element.querySelector('.detail').classList.toggle('active');
@@ -18,7 +20,7 @@ function Experience() {
         <>
             <div className="experience-section">
                 <section id="experience">
-                    <div className="experience-text">
+                    <div className="centeredContainer">
                         <p className="section__text__p1">Explore my</p>
                         <h1 className="title">Experience</h1>
                     </div>

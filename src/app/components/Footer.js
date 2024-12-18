@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../styles/contact.module.css'; 
 
 
 function Footer(){
@@ -9,7 +8,7 @@ function Footer(){
             <div className="footer-section">
                 <nav>
                     <div className="nav-links-container">
-                        <ul className="nav-links">
+                        <ul className="footer-nav-links">
                             <li><a href="#about">About</a></li>
                             <li><a href="#experience">Experience</a></li>
                             <li><a href="#projects">Projects</a></li>

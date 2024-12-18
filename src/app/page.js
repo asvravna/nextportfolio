@@ -1,4 +1,3 @@
-import styles from "./page.module.css";
 import Header from './components/Header';
 import About from './components/About';
 import Profile from './components/Profile';
@@ -9,19 +8,21 @@ import Footer from './components/Footer';
 
 
 
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <div>
         <Header />
         <Profile />
         <About /> 
         <Experience />
         <Projects />
         <Contact />
-      </main>
-      <Footer />
+        <Footer />
     </div>
+
+     
   );
 }
+
+    // <div className={styles.page}>   </div>
+    //   <main className={styles.main}>   </main>

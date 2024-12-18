@@ -2,9 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import styles from '../styles/projects.module.css'; 
-
-
 
 const Projects = () => {
   const openInNewTab = (url) => {
@@ -14,7 +11,7 @@ const Projects = () => {
   return (
     <div className="projects-section">
       <section id="projects">
-        <div className="projects-text">
+        <div className="centeredContainer">
           <p className="section__text__pp1">Browse my recent</p>
           <h1 className="title_for_projects">Projects</h1>
         </div>
@@ -37,13 +34,13 @@ const Projects = () => {
               </p>
               <div className="btn-container">
                 <button
-                  className="btn btn-color-2 project-btn"
+                  className="btn3"
                   onClick={() => openInNewTab('https://www.uio.no/studier/emner/matnat/ifi/IN1060/v24/prosjektgrupper/artifakt/')}
                 >
                   Project page
                 </button>
                 <button
-                  className="btn btn-color-2 project-btn"
+                  className="btn3"
                   onClick={() => openInNewTab('https://www.youtube.com/watch?v=WG1hPkSvW0Y')}
                 >
                   Video
@@ -67,20 +64,20 @@ const Projects = () => {
               </p>
               <div className="btn-container">
                 <button
-                  className="btn btn-color-2 project-btn"
+                  className="btn3"
                   onClick={() => openInNewTab('https://www.figma.com/proto/X1zN7miZLB6TZEGkxvIIsu/BeskyttBevis?node-id=1-30&starting-point-node-id=1%3A30&t=55pJw4rVdWrHex9F-1')}
                 >
                   Live Demo
                 </button>
                 <button
-                  className="btn btn-color-2 project-btn"
+                  className="btn3"
                   onClick={() => openInNewTab('./images/Diplom Anna Ravna.pdf')}
                 >
                   Diploma
                 </button>
               </div>
             </div>
-            <div className="details-container color-container">
+            <div className="color-container">
               <div className="article-container">
               <h3 className="project-title-number">Project 1</h3>
 
@@ -98,13 +95,13 @@ const Projects = () => {
               </p>
               <div className="btn-container">
                 <button
-                  className="btn btn-color-2 project-btn"
+                  className="btn3"
                   onClick={() => openInNewTab('https://www.figma.com/proto/va5i7v3bMuGhEVSSQQ5C1H/Wireframe-oblig-3?node-id=34-2&node-type=CANVAS&t=vO9Kjlck7YwwUxjS-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=34%3A2')}
                 >
                   Live Demo
                 </button>
                 <button
-                  className="btn btn-color-2 project-btn"
+                  className="btn3"
                   onClick={() => openInNewTab('https://www.figma.com/board/txWby9CIWwnzXR9ch7sp9A/Prototyping-Embark?node-id=1-143&t=GMaepl7YYC5wLWvL-1')}
                 >
                   Prototyping process
@@ -114,16 +111,16 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      <div className="container">
+      <div className="centeredContainer">
       <section id="this-website">
         <div className="this-website">
-          <div className="details-container color-container2">
+          <div className="color-container">
             <h2 className="experience-sub-title project-title">This website</h2>
             <p className="projects__description">
               Developed using Next.js.
             </p>
             <button
-                className="annasbtn"
+                className="btn3"
                 onClick={() => openInNewTab('https://github.com/asvravna/nextportfolio')}
                 >
                 Source code

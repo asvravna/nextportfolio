@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import styles from '../styles/profile.module.css'; 
 
 function Profile() {
     const openInNewTab = (url) => {
@@ -10,39 +9,39 @@ function Profile() {
     };
 
     return (
-        <div className={styles.profileSection}> 
+        <div className="profileSection"> 
             <section id="profile"> 
-                <div className={styles.sectionPicContainer}>
-                    <Image 
-                        src="/images/about-pic.jpg"
-                        alt="Anna Ravna profile picture"
-                        className={styles.aboutPic}
-                        width={1000} 
-                        height={900}
-                        layout="responsive" 
+                <div className="sectionPicContainer">
+                <Image
+                    src="/images/about-pic.jpg"
+                    alt="About Picture"
+                    width={800} /* Adjust width as needed */
+                    height={600} /* Adjust height to maintain aspect ratio */
+                    className="aboutPic"
+                    priority
                     />
                 </div>
-                <div className={styles.sectionText}>
-                    <p className={styles.sectionTextP1}>Hello I&apos;m</p>
-                    <h1 className={styles.profileTitle}>Anna Sofie Vylka Ravna</h1>
-                    <p className={styles.sectionTextP2}>Developer &amp; UX-designer</p>
-                    <div className={styles.btnContainer}>
-                        <button className={styles.btn + ' ' + styles.btnColor2}
+                <div className="sectionText">
+                    <p className="sectionTextP1">Hello I&apos;m</p>
+                    <h1 className="profileTitle">Anna Sofie Vylka Ravna</h1>
+                    <p className="sectionTextP1">Developer &amp; UX-designer</p>
+                    <div className="btnContainer">
+                        <button className="btn3"
                             onClick={() => openInNewTab('./images/CV.pdf')}
                         >
                             Download CV
                         </button>
-                        <button className={styles.btn + ' ' + styles.btnColor2}
+                        <button className="btn3"
                             onClick={() => (window.location.href = './#contact')}
                         >
                             Contact info
                         </button>
                     </div>
-                    <div id={styles.socialsContainer}>
+                    <div id="socialsContainer">
                         <Image
                             src="/images/linkedin.png"
                             alt="My LinkedIn profile"
-                            className={styles.icon}
+                            className="icon"
                             width={32} 
                             height={32} 
                             onClick={() => openInNewTab('https://www.linkedin.com/in/anna-sofie-vylka-ravna-2849ba284/')}
@@ -50,7 +49,7 @@ function Profile() {
                         <Image
                             src="/images/github.png"
                             alt="My GitHub profile"
-                            className={styles.icon}
+                            className="icon"
                             width={32} // Set appropriate width
                             height={32} // Set appropriate height
                             onClick={() => openInNewTab('https://github.com/asvravna')}

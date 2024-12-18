@@ -2,8 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import InteractiveImage from './InteractiveImage'; // Import the Client Component
-import styles from '../styles/about.module.css';
+// import InteractiveImage from './InteractiveImage'; // Import the Client Component
 
 function About() {
   const handleIconClick = (url) => {
@@ -11,33 +10,36 @@ function About() {
   };
 
   return (
-    <div className={styles.aboutSection}>
+    <div className="aboutSection">
       <section id="about">
-        <div className={styles.textBox}>
-          <p className={styles.section__text__p1}>Get to know more</p>
-          <h1 className={styles.title}>About me</h1>
+        <div className="textBox">
+          <div className="centeredContainer">
+          <p className="sectionText">Get to know more</p>
+          <h1 className="title">About me</h1>
+          </div>
         </div>
-        <div className={styles.sectionContainer}>
-          <div className={styles.aboutDetailsContainer}>
-            <div className={styles.aboutContainers}>
-              <div className={styles.detailsContainer}>
+        <div className="sectionContainer">
+          <div className="aboutDetailsContainer">
+            <div className="aboutContainers">
+              <div className="detailsContainer">
                 <Image
                   src="/images/experience.png"
                   alt="Experience icon"
-                  className={styles.icon}
-                  width={64}
-                  height={64}
+                  className="icon"
+                  width={30}
+                  height={30}
                 />
                 <h3>Experience</h3>
                 <p>2+ years Software development</p>
               </div>
-              <div className={styles.detailsContainer} onClick={() => handleIconClick('https://www.uio.no/studier/program/inf-design/')}>
+              <div className="education-container">
+              <div className="detailsContainer" onClick={() => handleIconClick('https://www.uio.no/studier/program/inf-design/')}>
                 <Image
-                  src="/images/education.png"
+                  src="/images/uio.png"
                   alt="Education icon"
-                  className={styles.icon}
-                  width={64}
-                  height={64}
+                  className="icon"
+                  width={30}
+                  height={30}
                 />
                 <h3>Education</h3>
                 <p>
@@ -45,9 +47,10 @@ function About() {
                   University of Oslo
                 </p>
               </div>
+              </div>
             </div>
           </div>
-          <div className={styles.textContainer}>
+          <div className="textContainer">
             <p>
               I am a 22-year-old student from Tromsø, studying informatics at the University of Oslo.
               I am currently studying research methods in Human-Computer-Interaction, as well as how
