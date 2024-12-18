@@ -45,14 +45,12 @@ function Header() {
           <p className="Logo_text"> Ravna </p>
 
           {/* Hamburger Icon for Mobile */}
-          <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          {/* <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
-          </div>
-
-          {/* Desktop Navigation Links
-          <div className="navbar-elements">
+          </div> */}
+          {/* <div className="navbar-elements">
             <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Experience</a></li>
