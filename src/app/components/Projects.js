@@ -17,7 +17,7 @@ const Projects = () => {
         </div>
         <div className="experience-details-container">
           <div className="about-containers">
-            <div className="details-container color-container">
+            <div className="projectContainer">
               <div className="article-container">
               <h3 className="project-title-number">Project 3</h3>
                 <Image
@@ -47,7 +47,7 @@ const Projects = () => {
                 </button>
               </div>
             </div>
-            <div className="details-container color-container">
+            <div className="projectContainer">
               <div className="article-container">
               <h3 className="project-title-number">Project 2</h3>
                 <Image
@@ -77,7 +77,7 @@ const Projects = () => {
                 </button>
               </div>
             </div>
-            <div className="color-container">
+            <div className="projectContainer">
               <div className="article-container">
               <h3 className="project-title-number">Project 1</h3>
 
@@ -111,10 +111,9 @@ const Projects = () => {
           </div>
         </div>
       </section>
-      <div className="centeredContainer">
       <section id="this-website">
         <div className="this-website">
-          <div className="color-container">
+          <div className="projectContainer">
             <h2 className="experience-sub-title project-title">This website</h2>
             <p className="projects__description">
               Developed using Next.js.
@@ -128,7 +127,6 @@ const Projects = () => {
           </div>
         </div>
       </section>
-    </div>
     </div>
   );
 };

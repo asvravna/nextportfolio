@@ -112,7 +112,7 @@ a:hover {
 
 /* Mobile devices (up to 768px) - Hide the timeline */
 @media (max-width: 768px) {
-  .timeline-container {
+  .timelineContainer {
       display: none;
   }
   .year-description{
@@ -121,40 +121,6 @@ a:hover {
     
   }
 }
-
-/* Mobile and Small Screen Styles */
-@media (max-width: 768px) {
-  .timeline-container {
-    padding: 1rem;
-  }
-
-  .timeline-line {
-    left: 10%;
-    height: 100%;
-  }
-
-  .timeline-points {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .timeline-point {
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 1.5rem 0;
-  }
-
-  .year-description {
-    font-size: 1rem;
-  }
-
-  .detail {
-    width: 100%;
-    margin-top: 1rem;
-  }
-}
-
 
 /* Mobile-specific adjustments */
 @media screen and (max-width: 768px) {
@@ -171,8 +137,6 @@ a:hover {
       font-size: 0.9rem; /* Adjust text size for mobile */
   }
 }
-
-
 
 /* Footer */
 /* Make nav-links invisible on mobile screen sizes */
@@ -231,18 +195,24 @@ a:hover {
       width: 90%;
       max-width: 300px;
   }
+  /* box-sizing: border-box; Ensures padding is included in the width */
+  /* display: flex;                    */
 
-  .color-container {
-    width: 100%; /* Makes the container fill the entire width */
-    max-width: 100%; /* Ensure no maximum width limit */
-    border: 2px solid #ccc; /* Light gray border */
-    padding: 1rem; /* Add some space inside the box */
-    border-radius: 8px; /* Optional: round the corners */
-    background-color: #fff; /* Optional: background color */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    margin: 0 auto; /* Centering horizontally if there's any margin */
 
-}
+  .projectContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%; /* Full width */
+    min-width: 300px; /* Ensure it doesn't get smaller than 300px */
+    display: flex;                     /* Enable flexbox */
+  
+  }
   /* Mobile-specific button sizes */
   .btn {
       width: 100%;
@@ -573,11 +543,10 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
-  width: 100%; /* Make sure this container takes up full width */
-  max-width: 1200px; /* Optional: Set a max-width for large screens */
-  margin: 0 auto; /* Center the container */
-  padding-left: 0;
+  gap: 2rem;
+  display: flex; /* Enable Flexbox on the parent container */
+  align-items: center; /* Center vertically */
+  padding-left: 13%;
 }
 
 .aboutPic {

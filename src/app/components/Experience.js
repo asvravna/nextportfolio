@@ -168,7 +168,7 @@ function Experience() {
                            </div>
                         </div>
                     </div>
-                    <div className="timeline-container">
+                    <div className="timelineContainer">
                         <div className="timeline-line"></div>
                         <div className="timeline-arrow"></div>
                         <div className="timeline-points">
@@ -211,19 +211,11 @@ function Experience() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="timeline-labels">
+                        <div className="timeline-labels">
                         <h1 className="year-description start">2024</h1>
                         <h1 className="year-description end">2025</h1>
                     </div>
-                    {/* <Image
-                        src="/images/arrow.png"
-                        alt="Arrow icon"
-                        height={100}
-                        width={30}
-                        className="icon arrow"
-                        onClick={() => (window.location.href = './#projects')}
-                    /> */}
+                    </div>
                 </section>
             </div>
         </>
