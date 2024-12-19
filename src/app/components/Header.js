@@ -43,14 +43,13 @@ function Header() {
             priority // Add the "priority" prop to improve LCP
           />
           <p className="Logo_text"> Ravna </p>
-
-          {/* Hamburger Icon for Mobile */}
-          {/* <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+           <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
-          </div> */}
-          {/* <div className="navbar-elements">
+          </div> 
+          
+          <div className="navbar-elements">
             <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Experience</a></li>
@@ -58,7 +57,7 @@ function Header() {
               <li><a href="#contact">Contact</a></li>
               <li><a href="#this-website">This website</a></li>
             </ul>
-          </div> */}
+          </div> 
         </nav>
       </header>
     </div>
