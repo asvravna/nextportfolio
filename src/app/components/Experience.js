@@ -55,7 +55,7 @@ function Experience() {
                                         <p>Basic</p>
                                         </div>
                                 </article>
-                                <article>
+                                {/* <article>
                                     <Image
                                         src="/images/checkmark.png"
                                         height={100}
@@ -67,7 +67,7 @@ function Experience() {
                                         <h3>React</h3>
                                         <p>Basic</p>
                                     </div>
-                                </article>
+                                </article> */}
                                 <article>
                                     <Image 
                                         src="/images/checkmark.png"
