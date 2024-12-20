@@ -270,8 +270,8 @@ a:hover {
 }
 /* Logo Styles */
 .logoimg{
-  height: 40%;
-  width:40%;
+  height: 50%;
+  width:50%;
 }
 
 .Logo_text{
@@ -329,7 +329,7 @@ a:hover {
   justify-content: center;           /* Horizontally center the icons */
   align-items: center;               /* Vertically align the icons */
   gap: 1.5rem;  
-  padding-top: 20%;                     /* Add space between the icons */
+  padding-top: 5%;                     /* Add space between the icons */
 }
 
 .socialsContainer img {
@@ -385,11 +385,23 @@ section {
   display: flex;         /* Use flexbox to align content */
   justify-content: center;  /* Horizontally center */
   align-items: center;      /* Vertically center */
-  height: 2vh;        /* Take the full height of the viewport */
+  height: 4vh;        /* Take the full height of the viewport */
   text-align: center;   /* Make sure the text inside is centered */
+  font-weight: 600;
 }
+.sectionTextP2 {
+  display: flex;         /* Use flexbox to align content */
+  justify-content: center;  /* Horizontally center */
+  align-items: center;      /* Vertically center */
+  height: 6vh;        /* Take the full height of the viewport */
+  text-align: center;   /* Make sure the text inside is centered */
+  font-weight: 800;
+  font-size: 20px;
+}
+
+
 .profileTitle{
-  padding-bottom:5%;
+  padding-left:5%;
 }
 
 /* Profile Section */
@@ -453,7 +465,7 @@ nav {
 }
 
 .logoimg {
-  height: 50px;
+  height: 90px;
   width: auto;
 }
 

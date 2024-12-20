@@ -19,7 +19,7 @@ const Projects = () => {
           <div className="about-containers">
             <div className="projectContainer">
               <div className="article-container">
-              <h3 className="project-title-number">Project 3</h3>
+              <h3 className="project-title-number">Project 1</h3>
                 <Image
                   src="/images/ferdig-prototype.png"
                   width={300}
@@ -79,7 +79,7 @@ const Projects = () => {
             </div>
             <div className="projectContainer">
               <div className="article-container">
-              <h3 className="project-title-number">Project 1</h3>
+              <h3 className="project-title-number">Project 3</h3>
 
                 <Image
                   src='/images/project-1.png'

@@ -24,7 +24,7 @@ function Profile() {
                 <div className="sectionText">
                     <p className="sectionTextP1">Hello I&apos;m</p>
                     <h1 className="profileTitle">Anna Sofie Vylka Ravna</h1>
-                    <p className="sectionTextP1">Developer &amp; UX-designer</p>
+                    <p className="sectionTextP2">Developer &amp; UX-designer</p>
                     <div className="btnContainer">
                         <button className="btn3"
                             onClick={() => openInNewTab('./images/CV.pdf')}
