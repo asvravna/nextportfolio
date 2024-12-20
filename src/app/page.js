@@ -24,5 +24,3 @@ export default function Home() {
   );
 }
 
-    // <div className={styles.page}>   </div>
-    //   <main className={styles.main}>   </main>

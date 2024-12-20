@@ -37,10 +37,10 @@ function Header() {
           <Image
             src="/images/logo3.webp" // Logo image path
             alt="Logo"
-            width={700} // Set desired width
-            height={100} // Set desired height
+            width={700} 
+            height={100} 
             className="logoimg"
-            priority // Add the "priority" prop to improve LCP
+            priority 
           />
           <p className="Logo_text"> Ravna </p>
            <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -48,7 +48,7 @@ function Header() {
             <div className="line"></div>
             <div className="line"></div>
           </div> 
-          
+
           <div className="navbar-elements">
             <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
               <li><a href="#about">About</a></li>
