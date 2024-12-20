@@ -75,15 +75,15 @@ a:hover {
 }
 
 .navbar-elements {
-  display: none; /* Hide the navbar by default */
+  display: none;
 }
 .hamburgerNav.open + .navbar-elements {
-  display: block; /* Make navbar-elements visible when the hamburger is open */
+  display: block; 
 }
-  /* Nav links styles */
+ 
   .navLinks {
     padding-top:10%;
-    display: none; /* Hidden by default */
+    display: none; 
     flex-direction: column;
   }
   .navbar-elements .open{
@@ -91,15 +91,14 @@ a:hover {
   }
   .navLinks {
     display: none;
-    flex-direction: column; /* Stack the links vertically */
-    list-style: none; /* Remove the default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    flex-direction: column; 
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
   }
 
-  /* Show nav-links when the menu is open */
   .navLinks.open {
-    display: flex; /* Show the nav links */
+    display: flex; 
   }
 
   .navLinks li {
