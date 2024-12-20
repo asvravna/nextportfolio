@@ -44,13 +44,74 @@ a:hover {
 
 
 
+
+
+
+
 /* Mobile view (max-width: 768px) */
 @media (max-width: 768px) {
- 
-  
 
-
+.hamburgerNav {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
 }
+.hamburgerNav .lines {
+  width: 100%;
+  height: 4px;
+  background-color: black; /* Line color */
+  border-radius: 2px; /* Rounded edges */
+}
+.hamburgerNav {
+  display: flex;
+}
+
+.hamburgerNav.open {
+}
+
+.hamburgerNav.open li{
+  display:none;
+}
+
+.navbar-elements {
+  display: none; /* Hide the navbar by default */
+}
+.hamburgerNav.open + .navbar-elements {
+  display: block; /* Make navbar-elements visible when the hamburger is open */
+}
+  /* Nav links styles */
+  .navLinks {
+    padding-top:10%;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+  }
+  .navbar-elements .open{
+  display:flex;
+  }
+  .navLinks {
+    display: none;
+    flex-direction: column; /* Stack the links vertically */
+    list-style: none; /* Remove the default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  /* Show nav-links when the menu is open */
+  .navLinks.open {
+    display: flex; /* Show the nav links */
+  }
+
+  .navLinks li {
+    padding: 10px 0;
+  }
+  .navLinks li a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+}
+
 
 
 

@@ -35,7 +35,7 @@ function Header() {
         <nav id="desktop-nav">
           <p className="Logo_text"> A. S.</p>
           <Image
-            src="/images/logo3.webp" // Logo image path
+            src="/images/logo3.webp" 
             alt="Logo"
             width={700} 
             height={100} 
@@ -43,14 +43,14 @@ function Header() {
             priority 
           />
           <p className="Logo_text"> Ravna </p>
-           <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
+           <div className={`hamburgerNav ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+            <div className="lines"></div>
+            <div className="lines"></div>
+            <div className="lines"></div>
           </div> 
 
           <div className="navbar-elements">
-            <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+            <ul className={`navLinks ${isMenuOpen ? 'open' : ''}`}>
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Experience</a></li>
               <li><a href="#projects">Projects</a></li>
