@@ -48,16 +48,13 @@ function Header() {
             <div className="lines"></div>
             <div className="lines"></div>
           </div> 
-
-          <div className="navbar-elements">
-            <ul className={`navLinks ${isMenuOpen ? 'open' : ''}`}>
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#this-website">This website</a></li>
-            </ul>
-          </div> 
+          <ul className={`navbar-elements ${isMenuOpen ? 'open' : ''}`}>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#this-website">This website</a></li>
+          </ul>
         </nav>
       </header>
     </div>
