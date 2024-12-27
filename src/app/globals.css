@@ -399,17 +399,12 @@ section {
   font-size: 20px;
 }
 
-
-.profileTitle{
-  padding-left:5%;
-}
-
 /* Profile Section */
 #profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.0rem; /* Reduced gap for mobile */
+  gap: 1.0rem; 
   padding: 2rem 0;
   height: auto;
 }
@@ -602,6 +597,10 @@ h1 {
   gap: 1rem;
 }
 
+.detailsContainer{
+  padding-bottom:5%;
+  padding-top: 5%;
+}
 /* Title of the section (Design/Development) */
 .experience-sub-title {
   font-size: 1.3rem;
@@ -612,6 +611,7 @@ h1 {
   font-size: 1.3rem;
   font-weight: 300;
   padding-left: 15%;
+  padding-top:10%;
 }
 
 /* Container for articles (individual skills) */
