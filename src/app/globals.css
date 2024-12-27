@@ -38,236 +38,6 @@ a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* Mobile view (max-width: 768px) */
-@media (max-width: 768px) {
-
-.hamburgerNav {
-  display: flex;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 25px;
-}
-.hamburgerNav .lines {
-  width: 100%;
-  height: 4px;
-  background-color: black; /* Line color */
-  border-radius: 2px; /* Rounded edges */
-}
-.hamburgerNav {
-  display: flex;
-}
-
-
-.hamburgerNav.open li{
-  display:none;
-}
-
-.navbar-elements {
-  display: none;
-}
-.hamburgerNav.open + .navbar-elements {
-  display: block; 
-}
- 
-  .navLinks {
-    padding-top:10%;
-    display: none; 
-    flex-direction: column;
-  }
-  .navbar-elements .open{
-  display:flex;
-  }
-  .navLinks {
-    display: none;
-    flex-direction: column; 
-    list-style: none; 
-    padding: 0;
-    margin: 0; 
-  }
-
-  .navLinks.open {
-    display: flex; 
-  }
-
-  .navLinks li {
-    padding: 10px 0;
-  }
-  .navLinks li a:hover {
-    color: #8EB4E5;
-  }
-}
-
-
-
-
-
-
-
-
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-  .aboutPic {
-    width: 100%;  /* Allow the image to fill 90% of the container on mobile */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
-  }
-
-  .text-container {
-    font-size: 0.9rem; /* Slightly smaller text for better readability */
-  }
-}
-
-
-/* Mobile devices (up to 768px) - Hide the timeline */
-@media (max-width: 768px) {
-  .timelineContainer {
-      display: none;
-  }
-  .year-description{
-    display: none;
-
-    
-  }
-}
-
-/* Mobile-specific adjustments */
-@media screen and (max-width: 768px) {
-  .contact-info-container {
-      gap: 0.8rem; /* Smaller gap between icons */
-  }
-
-  .contact-info-container .contact-icon {
-      width: 25px; /* Smaller icons for mobile */
-      height: 25px;
-  }
-
-  .contact-info-container p {
-      font-size: 0.9rem; /* Adjust text size for mobile */
-  }
-}
-
-/* Footer */
-/* Make nav-links invisible on mobile screen sizes */
-@media screen and (max-width: 768px) {
-  footer ul {
-      display: none;  /* Hides the unordered list on mobile */
-  }
-  footer-nav-links{
-    display: none;  /* Hides the unordered list on mobile */
-
-  }
-}
-
-/* Mobile Media Query */
-@media screen and (max-width: 768px) {
-  body {
-      font-size: 0.9rem; /* Make font smaller for better mobile readability */
-      padding: 0 1rem; /* Add padding for mobile */
-  }
-
-  .logo-image {
-      width: 100px;
-      height: 100px;
-  }
-
-  .profile-title {
-      font-size: 1.5rem;
-      padding-bottom: 1rem;
-  }
-
-  .profile-pic {
-      width: 120px;
-      height: 120px;
-  }
-
-  .about-pic {
-      width: 80%;
-      max-width: 400px;
-      height: auto;
-  }
-
-  .text-container {
-      font-size: 1rem;
-      line-height: 1.5;
-  }
-
-  /* Ensure images scale down and don't overwhelm the screen */
-  .project-img {
-      width: 90%;
-      max-width: 300px;
-  }
- 
-
-
-  .projectContainer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 2px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-    background-color: #fff;
-    width: 100%; /* Full width */
-    min-width: 300px; /* Ensure it doesn't get smaller than 300px */
-    display: flex;                     /* Enable flexbox */
-  
-  }
-  /* Mobile-specific button sizes */
-  .btn {
-      width: 100%;
-      font-size: 1.1rem;
-  }
-
-  /* Centering content and reducing text size for contact info */
-  .contact-info-container {
-      font-size: 0.9rem;
-      flex-direction: column;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Desktop-specific adjustments ----------------------------------------------------------------------------------------------*/
-@media screen and (min-width: 769px) {
-  .contact-info-container {
-      gap: 1.5rem; /* Larger gap between icons on desktop */
-  }
-
-  .contact-info-container .contact-icon {
-      width: 35px; /* Larger icons for desktop */
-      height: 35px;
-  }
-}
 /* Logo Styles */
 .logoimg{
   height: 50%;
@@ -888,6 +658,200 @@ article .icon {
   color: black;
   margin: 0;
 }
+
+
+/* Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+
+  .hamburgerNav {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+  }
+  .hamburgerNav .lines {
+    width: 100%;
+    height: 4px;
+    background-color: black; /* Line color */
+    border-radius: 2px; /* Rounded edges */
+  }
+  .hamburgerNav {
+    display: flex;
+  }
+
+
+  .hamburgerNav.open li{
+    display:none;
+  }
+
+  .navbar-elements {
+    display: none;
+  }
+  .hamburgerNav.open + .navbar-elements {
+    display: block; 
+  }
+ 
+  .navLinks {
+    padding-top:10%;
+    display: none; 
+    flex-direction: column;
+  }
+  .navbar-elements .open{
+  display:flex;
+  }
+  .navLinks {
+    display: none;
+    flex-direction: column; 
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+  }
+
+  .navLinks.open {
+    display: flex; 
+  }
+
+  .navLinks li {
+    padding: 10px 0;
+  }
+  .navLinks li a:hover {
+    color: #8EB4E5;
+  }
+  .aboutPic {
+    width: 100%;  /* Allow the image to fill 90% of the container on mobile */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+  }
+
+  .text-container {
+    font-size: 0.9rem; /* Slightly smaller text for better readability */
+  }
+  .timelineContainer {
+    display: none;
+  }
+  .year-description{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info-container {
+      gap: 0.8rem; /* Smaller gap between icons */
+  }
+
+  .contact-info-container .contact-icon {
+      width: 25px; /* Smaller icons for mobile */
+      height: 25px;
+  }
+
+  .contact-info-container p {
+      font-size: 0.9rem; /* Adjust text size for mobile */
+  }
+  footer ul {
+      display: none;  /* Hides the unordered list on mobile */
+  }
+  footer-nav-links{
+    display: none;  /* Hides the unordered list on mobile */
+
+  }
+  
+  body {
+      font-size: 0.9rem; /* Make font smaller for better mobile readability */
+      padding: 0 1rem; /* Add padding for mobile */
+  }
+
+  .logo-image {
+      width: 100px;
+      height: 100px;
+  }
+
+  .profile-title {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+  }
+
+  .profile-pic {
+      width: 120px;
+      height: 120px;
+  }
+
+  .about-pic {
+      width: 80%;
+      max-width: 400px;
+      height: auto;
+  }
+
+  .text-container {
+      font-size: 1rem;
+      line-height: 1.5;
+  }
+
+  /* Ensure images scale down and don't overwhelm the screen */
+  .project-img {
+      width: 90%;
+      max-width: 300px;
+  }
+
+  .projectContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%; /* Full width */
+    min-width: 300px; /* Ensure it doesn't get smaller than 300px */
+    display: flex;                     /* Enable flexbox */
+  
+  }
+  /* Mobile-specific button sizes */
+  .btn {
+      width: 100%;
+      font-size: 1.1rem;
+  }
+
+  /* Centering content and reducing text size for contact info */
+  .contact-info-container {
+      font-size: 0.9rem;
+      flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop-specific adjustments ----------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 769px) {
+  .contact-info-container {
+      gap: 1.5rem; /* Larger gap between icons on desktop */
+  }
+
+  .contact-info-container .contact-icon {
+      width: 35px; /* Larger icons for desktop */
+      height: 35px;
+  }
+}
+
 
 /* DESKTOP Media Query */
 @media screen and (min-width: 769px) {
