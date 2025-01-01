@@ -168,7 +168,7 @@ function Experience() {
                            </div>
                         </div>
                     </div>
-                    <div className="timelineContainer">
+                    <div className="timeline-container">
                         <div className="timeline-line"></div>
                         <div className="timeline-arrow"></div>
                         <div className="timeline-points">

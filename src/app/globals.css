@@ -95,11 +95,10 @@ a:hover {
 }
 
 #socialsContainer {
-  display: flex;                     /* Use flexbox to arrange the icons */
-  justify-content: center;           /* Horizontally center the icons */
-  align-items: center;               /* Vertically align the icons */
+  display: flex;                    
+  justify-content: center;           
+  align-items: center;               
   gap: 1.5rem;  
-  padding-top: 5%;                     /* Add space between the icons */
 }
 
 .socialsContainer img {
@@ -360,7 +359,6 @@ h1 {
   gap: 2rem;
 }
 
-/* Container for each section (Design/Development) */
 .details-container {
   display: flex;
   flex-direction: column;
@@ -371,11 +369,9 @@ h1 {
   padding-bottom:5%;
   padding-top: 5%;
 }
-/* Title of the section (Design/Development) */
 .experience-sub-title {
   font-size: 1.3rem;
   font-weight: 300;
-  /* padding-left: 15%; */
 }
 .experienceSubTitle {
   font-size: 1.3rem;
@@ -384,7 +380,6 @@ h1 {
   padding-top:10%;
 }
 
-/* Container for articles (individual skills) */
 .article-container {
   display: flex;
   flex-wrap: wrap;
@@ -392,7 +387,6 @@ h1 {
 }
 
 
-/* Each article for skills/technologies */
 article {
   font-size: 12px;
   display: flex;
@@ -439,12 +433,6 @@ article .icon {
   gap: 1.5rem;
   width: 100%;
 }
-
-/* Default style - Timeline is visible */
-.timeline-container {
-  display: block;
-}
-
 
 /* Projects Section */
 #projects {
@@ -726,8 +714,72 @@ article .icon {
   .aboutPic{
     height:500px;
   }
+
+  .profileTitle{
+    padding-top: 5%;
+    font-size: 40px;
+    padding-bottom: 5%;
+  }
+  .sectionTextP1{
+    font-size: 20px;
+  }
+
+  .sectionTextP2{
+    font-size: 30px;
+  }
+
+  /*ABOUT SECTION*/
+  #about {
+    position: relative;
+  }
+  .title {
+    color:#8EB4E5;
+    padding-bottom:10%;
+    font-size: 30px;
+  }
+
+  .aboutContainers {
+    gap: 2.5rem;
+  }
+
+  .aboutDetailsContainer {
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -6%;
+  }
+
+
+  .aboutContainers, 
+  .aboutDetailsContainer {
+    display: flex;
+    padding-left: 5%;
+  }
+
+  .detailsContainer {
+    padding: 1.5rem;
+    flex:1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    height:200px;
+  }
+
+  .centeredContainer {
+    gap: 4rem;
+    height: 80%
+  }
+  .textContainer{
+    height:200px;
+    width:2000px;
+  }
+  .textContainer p{
+    font-size: 20px;
+  }
+
   .contact-info-container {
-      gap: 1.5rem; /* Larger gap between icons on desktop */
+      gap: 1.5rem; 
   }
 
   .contact-info-container .contact-icon {
@@ -811,6 +863,12 @@ article .icon {
       width: 50%;
   }
 
+  
+  /* Default style - Timeline is visible */
+  .timeline-container {
+    display: block;
+  }
+
 
   .timeline-container {
     width: 100%;
@@ -821,7 +879,7 @@ article .icon {
   }
 
   .timeline-line {
-    margin-top: 1%;
+    margin-top: 0.5%;
     width: 101%;
     height: 2px;
     background-color: black;
