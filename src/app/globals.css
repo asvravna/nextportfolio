@@ -1033,18 +1033,21 @@ article .icon {
     align-items: center;        /* Centers items vertically (optional) */
     list-style: none;
     font-size: 1.2rem;
-    gap: 1rem;                  /* Space between links */
-    width: 100%;                /* Take up the full width */
+    gap: 1rem;                  
+    width: 100%;                
     margin: auto;               
     text-align: center;     
-    padding-bottom: 10%;    
+    padding-bottom: 10%;  
+    padding-right: 5%;
+
   }
 
   .footer-nav-links li a {
     display: inline-flex;      
     justify-content: center;    
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
+
 
   }
 
