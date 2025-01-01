@@ -13,14 +13,14 @@ function Contact(){
             <section id="contact">
                 <p className="section__text__p1"> Get in touch</p>
                 <h1 className="title"> Contact me</h1>
-                <div className="contact-info-upper-container">
+                <div className="contactContainer">
                     <div className="contact-info-container">
                         <Image 
                             src="/images/linkedin.png"
                             alt="LinkedIn icon"
-                            width={35}
-                            height={35}
-                            className="icon contact-icon"
+                            width={40}
+                            height={40}
+                            className="contact-icon"
                         />
                         <p><a onClick={() => openInNewTab('https://www.linkedin.com/in/anna-sofie-vylka-ravna-2849ba284/')}>
                             LinkedIn
@@ -30,9 +30,9 @@ function Contact(){
                         <Image 
                             src="/images/email.png"
                             alt="Email icon"
-                            width={35}
-                            height={35}
-                            className="icon contact-icon"
+                            width={50}
+                            height={50}
+                            className="contact-icon"
                         />
                         <p><a href="mailto:ansvravna@gmail.com">ansvravna@gmail.com</a></p>
                     </div>

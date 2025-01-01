@@ -6,7 +6,6 @@ function Footer(){
         <>
         <footer>
             <div className="footer-section">
-                <nav>
                     <div className="nav-links-container">
                         <ul className="footer-nav-links">
                             <li><a href="#about">About</a></li>
@@ -16,8 +15,7 @@ function Footer(){
                             <li><a href="#this-website">This website</a></li>
                         </ul>
                     </div>
-                </nav>
-                <p>Copyright &#169; 2024 Anna Sofie Vylka Ravna. All rights reserved.</p>
+                <p>Copyright &#169; 2025 Anna Sofie Vylka Ravna. All rights reserved.</p>
             </div>
         </footer>
         </>
