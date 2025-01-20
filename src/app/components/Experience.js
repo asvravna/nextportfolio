@@ -52,7 +52,7 @@ function Experience() {
                                         />
                                         <div>
                                         <h3>Usability testing</h3>
-                                        <p>Basic</p>
+                                        <p>Intermediate</p>
                                         </div>
                                 </article>
                                 {/* <article>
