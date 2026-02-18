@@ -1,9 +1,8 @@
-// components/Footer.tsx
 "use client";
 
-export default function CafeFooter() {
+export default function Footer() {
   return (
-    <footer className="w-full bg-neutral-50 px-8 py-12 text-neutral-900">
+    <footer className="w-full bg-neutral-200 px-8 py-12 text-neutral-900">
       <div className="mx-auto flex max-w-screen-xl flex-wrap justify-between gap-8 md:gap-6">
         <div className="w-full text-center md:w-auto md:text-left">
           <h4 className="mb-4 text-lg font-semibold">Element</h4>
