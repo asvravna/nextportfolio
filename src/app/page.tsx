@@ -11,9 +11,9 @@ export default function Home() {
       {/* 🌈 FULLSCREEN GRADIENT BACKGROUND */}
       <div className="fixed inset-0 -z-10">
         <Grainient
-          color1="#ff9ffc"
-          color2="#5227FF"
-          color3="#B19EEF"
+          color1="#509f7a"
+          color2="#201796"
+          color3="#ca9d4f"
           timeSpeed={0.25}
           colorBalance={0}
           warpStrength={1}
